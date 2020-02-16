@@ -1,0 +1,118 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+      <!-- Custom styles for this template -->
+      <link href= "{%static 'blog/css/main.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-primary text-dark fixed-top " >
+        <a class="navbar-brand" href="#">
+    <img src="{%static 'blog/images/rshin2.jpg'%}" width="40" height="40" alt="">
+  </a>
+        <a class="navbar-brand p-1 m-1" href="#" >R Shine Graphics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 20px;font-weight: bold;">
+          <ul class="navbar-nav mr-auto ml-auto ">
+            <li class="nav-item active">
+              <a class="nav-link mr-5"  href="{% url 'home' %}" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link mr-5" href="{% url 'services' %}" >Services</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link mr-5 " href="{% url 'about' %}" >About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link mr-5 " href="{% url 'contact' %}" >Contact</a>
+            </li>
+
+
+               <li class="nav-item ">
+              <a class="nav-link " style="padding-left:150px;" href="https://www.instagram.com/rshinegraphics/?hl=en" > <i class="fa fa-instagram" style="  text-align: center;
+font-size: 25px;width: 35px;height:25px;border-radius: 40%;color:#111;  margin: 5px 2px;" aria-hidden="true"></i></a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link " href="https://www.youtube.com/channel/UCBhsveCL1hrNoFcQdJgskkw?view_as=subscriber" ><i class="fa fa-youtube" style="  text-align: center;
+font-size: 25px;width: 35px;height:25px;border-radius: 40%;color:#111;  margin: 5px 2px;" aria-hidden="true"></i></a>
+            </li>
+
+
+
+              <li class="nav-item ">
+              <a class="nav-link " href="https://www.pinterest.ca/rshineg/" style="padding-right:0px;"><i class="fa fa-pinterest" style="  text-align: center;
+font-size: 25px;width: 35px;height:25px;border-radius: 40%;color:#111;  margin: 5px 2px;" aria-hidden="true"></i></a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+<div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+     {% block content %}
+
+        {%endblock %}
+   <!-- /container -->
+
+</div>
+
+      <!-- FOOTER -->
+      <footer class="container pt-5">
+          <p>&copy; 2023 by R Shine, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+
+      </footer>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+  </body>
+</html>
